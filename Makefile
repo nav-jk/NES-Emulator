@@ -1,12 +1,13 @@
-GXX = g++ -std=c++17
+GXX = g++ -std=c++17 -Wall -I.
 SRC = src
+TEST = test
 BUILD = build
 
 .PHONY : all clean run
 
 all:
 	mkdir -p $(BUILD)
-	$(GXX) $(SRC)/main.cpp -o $(BUILD)/main
+	$(GXX) $(SRC)/*.cpp $(TEST)/*.cpp -o $(BUILD)/main
 
 clean:
 	rm -rf $(BUILD)

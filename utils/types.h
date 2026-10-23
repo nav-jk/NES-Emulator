@@ -1,3 +1,5 @@
+#pragma once
+
 #define uint_8 unsigned char
 #define int_8 char
 #define uint_16 unsigned short
