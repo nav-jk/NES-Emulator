@@ -1,0 +1,1 @@
+#define TOTAL_MEMORY 0xFFFF
